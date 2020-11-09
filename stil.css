@@ -1,0 +1,78 @@
+html{
+    margin:0;
+}
+body {
+    max-width: 1140px;
+    background-color: lightgray;
+    color: black;
+}
+
+a:hover{
+    color:#2196c4;
+}  
+
+nav {
+    background-color: #32393d;
+    display:grid;
+    grid-template-columns: auto repeat(4, 1fr);
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+nav a{
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+nav .heim{
+    background-color: #107570;
+    font-weight: 800;
+    font-size: 32px;
+    padding: 10px;
+}
+
+
+main {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+img {
+    width: 100%;
+}
+
+.grid-element1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid-element2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-element4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#skate{
+    background-image: url(media/background_img.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 250px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#skate > h1{
+    text-align: center;
+    color: #33ccc4;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 27px;
+    
+}
